@@ -12,6 +12,6 @@ $button->set('Кликай :3');
 $button->icon='vk';
 $button->link('https://vk.com/');
 $button=$app->add('Button');
-$button->('Жми :0');
+$button->set('Жми :0');
 $button->icon='facebook';
 $button->link('https://www.facebook.com/');
