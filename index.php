@@ -10,4 +10,4 @@ $button->link('https://www.instagram.com/');
 $button=$app->add('Button');
 $button->set('Кликай :3');
 $button->icon='vk';
-$buttn->link('https://vk.com/');
+$button->link('https://vk.com/');
