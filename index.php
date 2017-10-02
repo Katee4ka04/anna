@@ -14,4 +14,4 @@ $button->link('https://vk.com/');
 $button=$app->add('Button');
 $button->set('Жми :0');
 $button->icon='facebook';
-$button->link('https://m.facebook.com');
+$button->link('https://www.facebook.com/');
