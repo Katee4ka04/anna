@@ -17,5 +17,5 @@ $button->icon='facebook';
 $button->link('https://www.facebook.com/');
 $button=$app->add('Button');
 $button->set('Я ловушкааа');
-$button->icon='book';
-$button->('https://www.e-klase.lv/lv/');
+$button->icon='youtube';
+$button->('https://www.youtube.com/?hl=lv&gl=LV');
