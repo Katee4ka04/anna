@@ -15,3 +15,7 @@ $button=$app->add('Button');
 $button->set('Жми :0');
 $button->icon='facebook';
 $button->link('https://www.facebook.com/');
+$button=$app->add('Button');
+$button->set('Я ловушкааа');
+$button->icon='e-klase';
+$button->('https://www.e-klase.lv/lv/');
