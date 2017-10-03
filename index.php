@@ -18,4 +18,4 @@ $button->link('https://www.facebook.com/');
 $button=$app->add('Button');
 $button->set('Я ловушкааа');
 $button->icon='youtube';
-$button->('https://www.youtube.com/?hl=lv&gl=LV');
+$button->link('https://www.youtube.com/?hl=lv&gl=LV');
