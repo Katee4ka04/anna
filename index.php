@@ -16,6 +16,6 @@ $button->set('Жми :0');
 $button->icon='facebook';
 $button->link('https://www.facebook.com/');
 $button=$app->add('Button');
-$button->set('Я ловушкааа');
+$button->set('Я ловушка');
 $button->icon='youtube';
 $button->link('https://www.youtube.com/?hl=lv&gl=LV');
