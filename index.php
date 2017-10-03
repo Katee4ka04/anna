@@ -19,7 +19,7 @@ $button=$app->add('Button');
 $button->set('Черная дыра');
 $button->icon='youtube';
 $button->link('https://www.youtube.com/?hl=lv&gl=LV');
-$button=$app->('Button');
+$button=$app->add('Button');
 $button->set('Опасность');
 $button->icon='book';
 $button->link('https://www.e-klase.lv/lv/');
