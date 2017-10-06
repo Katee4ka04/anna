@@ -28,7 +28,13 @@ $button4->addClass('massive green');
 
 $button5=$app->add(['Button','опасно','iconRight'=>'book']);
 $button5->link('https://www.e-klase.lv/lv/');
-$button5->addClass('mini black');
+$button5->addClass('mini teal');
+
+$button6=$app->add('Button');
+$button6=>set('Снапчат');
+$button6->icon='snapchat';
+$button6->link('https://www.snapchat.com/');
+$button6->addClass('blue');
 
 $bar = $app->add(['ui'=>'vertical buttons']);
 
