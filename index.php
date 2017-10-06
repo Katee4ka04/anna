@@ -30,4 +30,4 @@ $button5=$app->add('Button');
 $button5->set('Опасность');
 $button5->icon='book';
 $button5->link('https://www.e-klase.lv/lv/');
-$button5->addClass('mini');
+$button5->addClass('mini black');
