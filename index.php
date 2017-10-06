@@ -24,7 +24,7 @@ $button4=$app->add('Button');
 $button4->set('Черная дыра');
 $button4->icon='youtube';
 $button4->link('https://www.youtube.com/?hl=lv&gl=LV');
-$button4->addClass('massive greene');
+$button4->addClass('massive green');
 
 $button5=$app->add(['Button','опасно','iconRight'=>'book']);
 $button5->link('https://www.e-klase.lv/lv/');
