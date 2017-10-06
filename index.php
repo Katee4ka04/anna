@@ -30,6 +30,7 @@ $button5=$app->add(['Button','опасно','iconRight'=>'book']);
 $button5->link('https://www.e-klase.lv/lv/');
 $button5->addClass('mini black');
 
-$bar=$app->add(['ui'=>'vertical buttons']);
-$bar->add(['Button','Я все знаю','icon'=>'google']);
-$bar->add(['Button','Как дела','icon',=>'whatsapp']);
+$bar = $app->add(['ui'=>'vertical buttons']);
+
+$bar->add(['Button','Всезнающая','icon'=>'google']);
+$bar->add(['Button','Как дела','icon'=>'whatsapp']);
