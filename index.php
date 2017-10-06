@@ -36,6 +36,12 @@ $button6->icon='snapchat';
 $button6->link('https://www.snapchat.com/');
 $button6->addClass('blue');
 
+$button7=$app->add('Button');
+$button7->set('Позвони');
+$button7->icon='skype';
+$button7->link('https://www.skype.com/en/');
+$button7->addClass('tiny violet');
+
 $bar = $app->add(['ui'=>'vertical buttons']);
 
 $bar->add(['Button','Всезнающая','icon'=>'google']);
