@@ -26,8 +26,6 @@ $button4->icon='youtube';
 $button4->link('https://www.youtube.com/?hl=lv&gl=LV');
 $button4->addClass('massive red');
 
-$button5=$app->add('Button');
-$button5->set('Опасность');
-$button5->icon='book';
+$button5=$app->add(['Button','опасно','iconRight'=>'right arror']);
 $button5->link('https://www.e-klase.lv/lv/');
 $button5->addClass('mini black');
