@@ -6,19 +6,19 @@ $button1=$app->add('Button');
 $button1->set('Нажми :)');
 $button1->icon='instagram';
 $button1->link('https://www.instagram.com/');
-$button1->addClass('big blue');
+$button1->addClass('big red');
 
 $button2=$app->add('Button');
 $button2->set('Кликай :3');
 $button2->icon='vk';
 $button2->link('https://vk.com/');
-$button2->addClass('big teal');
+$button2->addClass('big orange');
 
 $button3=$app->add('Button');
 $button3->set('Жми :0');
 $button3->icon='facebook';
 $button3->link('https://www.facebook.com/');
-$button3->addClass('big olive');
+$button3->addClass('big yellow');
 
 $button4=$app->add('Button');
 $button4->set('Черная дыра');
@@ -29,3 +29,8 @@ $button4->addClass('massive red');
 $button5=$app->add(['Button','опасно','iconRight'=>'book']);
 $button5->link('https://www.e-klase.lv/lv/');
 $button5->addClass('mini black');
+
+$bar=$app->add(['ui'=>'vertical buttons']);
+
+$bar->add(['Button','Я все знаю','icon'=>'google']);
+$bar->add(['Button','Как дела','icon',=>'whatsapp']);
