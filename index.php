@@ -6,41 +6,41 @@ $button1=$app->add('Button');
 $button1->set('Нажми :)');
 $button1->icon='instagram';
 $button1->link('https://www.instagram.com/');
-$button1->addClass('big red');
+$button1->addClass('big pink');
 
 $button2=$app->add('Button');
 $button2->set('Кликай :3');
 $button2->icon='vk';
 $button2->link('https://vk.com/');
-$button2->addClass('big orange');
+$button2->addClass('big blue');
 
 $button3=$app->add('Button');
 $button3->set('Жми :0');
 $button3->icon='facebook';
 $button3->link('https://www.facebook.com/');
-$button3->addClass('big yellow');
+$button3->addClass('big violet');
 
 $button4=$app->add('Button');
 $button4->set('Черная дыра');
 $button4->icon='youtube';
 $button4->link('https://www.youtube.com/?hl=lv&gl=LV');
-$button4->addClass('massive green');
+$button4->addClass('massive red');
 
 $button5=$app->add(['Button','опасно','iconRight'=>'book']);
 $button5->link('https://www.e-klase.lv/lv/');
-$button5->addClass('mini teal');
+$button5->addClass('mini black');
 
 $button6=$app->add('Button');
 $button6->set('Снапчат');
 $button6->icon='snapchat';
 $button6->link('https://www.snapchat.com/');
-$button6->addClass('blue');
+$button6->addClass('yellow');
 
 $button7=$app->add('Button');
 $button7->set('Позвони');
 $button7->icon='skype';
 $button7->link('https://www.skype.com/en/');
-$button7->addClass('tiny violet');
+$button7->addClass('tiny teal');
 
 $bar = $app->add(['ui'=>'vertical buttons']);
 
