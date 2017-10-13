@@ -11,3 +11,4 @@ $label->addClass('masive purple');
 $button1=$app->add('Button');
 $button1->set('обратно');
 $button1->link('index.php');
+$button1->addDetail('test');
