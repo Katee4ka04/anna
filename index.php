@@ -49,6 +49,6 @@ $bar->add(['Button','Как дела','icon'=>'whatsapp']);
 */
 
 $button8=$app->add('Button');
-$button8->set('следит');
-$button8->icon='viber';
+$button8->set('туда');
+$button8->icon='book';
 $button8->link('katee4ka.php');
