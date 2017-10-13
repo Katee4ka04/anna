@@ -2,7 +2,7 @@
 require 'vendor/autoload.php';
 $app=new \atk4\ui\App('Добро пожаловать на вебстраничку!');
 $app->initLayout('Centered');
-$button1=$app->add('Button');
+/*$button1=$app->add('Button');
 $button1->set('Нажми :)');
 $button1->icon='instagram';
 $button1->link('https://www.instagram.com/');
@@ -46,3 +46,9 @@ $bar = $app->add(['ui'=>'vertical buttons']);
 
 $bar->add(['Button','Всезнающая','icon'=>'google']);
 $bar->add(['Button','Как дела','icon'=>'whatsapp']);
+*/
+
+$button8=$app->add('Button');
+$button8->set('следит');
+$button8->icon='viber';
+$button8->link('katee4ka.php');
