@@ -8,6 +8,7 @@ $label=$app->add(['Label','Я label:D','massive purple','detail'=>'смешар�
 $button1=$app->add('Button');
 $button1->set('обратно');
 $button1->link('index.php');
+$button1->addClass('big teal');
 
 $img='http://www.kino-teatr.ru/news/3822/46263.jpg';
 $icon=$app->add(['Image',$img]);

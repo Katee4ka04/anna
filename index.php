@@ -52,4 +52,4 @@ $button8=$app->add('Button');
 $button8->set('туда');
 $button8->icon='book';
 $button8->link('katee4ka.php');
-$button8->addClass('orange');
+$button8->addClass('orange massive');
