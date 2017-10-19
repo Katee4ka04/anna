@@ -14,5 +14,5 @@ $icon=$app->add(['Image',$img]);
 
 $label=>$app->add(['Label','Теперь ты','big pink','detal'=>'впал в детство']);
 
-$img1='http://multsforkids.ru/data/uploads/personaji/kopatich/smeshariki-kopatich.png';
+$img1='https://i.ytimg.com/vi/oWfOqQkM5JM/hqdefault.jpg';
 $icon=$app->add(['Image',$img1]);
