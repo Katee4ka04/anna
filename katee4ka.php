@@ -12,7 +12,7 @@ $button1->link('index.php');
 $img='http://www.kino-teatr.ru/news/3822/46263.jpg';
 $icon=$app->add(['Image',$img]);
 
-$label=$app->add(['Label','Теперь ты','big pink','detal'=>'впал в детство']);
+$label=$app->add(['Label','Теперь ты','big pink','detail'=>'впал в детство']);
 
 $img1='https://i.ytimg.com/vi/oWfOqQkM5JM/hqdefault.jpg';
 $icon=$app->add(['Image',$img1]);
