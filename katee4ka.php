@@ -22,8 +22,62 @@ $text=$app->add(['Text','Молоко полезно']);
 $text->addParagraph('Видишь каким стал Ёжик?');
 $text->addParagraph('Это он молока выпил');
 
+$a=0;
+if($a=0) {
+  $name='Хорошо';
+}else {
+  $name='Плохо';
+}
+
+$label=$app->add(['Label',$name,'massive olive']);
+
+$a=3;
+if($a=-3) {
+  $name='Хорошо';
+}else {
+  $name='Плохо';
+}
+
+$label=$app->add(['Label',$name,'massive olive']);
+
+$a=-6;
+if($a>=-666666) {
+  $name='Хорошо';
+}else {
+  $name='Плохо';
+}
+
+$label=$app->add(['Label',$name,'massive olive']);
+
+$a=999999;
+if($a<=0) {
+  $name='Хорошо';
+}else {
+  $name='Плохо';
+}
+
+$label=$app->add(['Label',$name,'massive olive']);
+
+$a=808080;
+if($a!=0) {
+  $name='Хорошо';
+}else {
+  $name='Плохо';
+}
+
+$label=$app->add(['Label',$name,'massive olive']);
+
 $a=3;
 if($a!=0) {
+  $name='Хорошо';
+}else {
+  $name='Плохо';
+}
+
+$label=$app->add(['Label',$name,'massive olive']);
+
+$a='test';
+if($a=тест) {
   $name='Хорошо';
 }else {
   $name='Плохо';
