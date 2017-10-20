@@ -17,3 +17,6 @@ $label=$app->add(['Label','Теперь ты','big pink','detail'=>'впал в 
 
 $img1='https://i.ytimg.com/vi/oWfOqQkM5JM/hqdefault.jpg';
 $icon=$app->add(['Image',$img1]);
+
+$text=$app->add(['Text','Молоко полезно');
+$text->addParagraph('Видишь какой стал Ёжик?');
