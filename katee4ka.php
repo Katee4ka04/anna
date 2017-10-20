@@ -25,11 +25,13 @@ $text->addParagraph('Это он молока выпил');
 $a=1;
 if($a==0) {
   $name='Хорошо';
+  $color='olive';
 }else {
   $name='Плохо';
+  $color='red'
 }
 
-$label=$app->add(['Label',$name,'massive olive']);
+$label=$app->add(['Label',$name,$color]);
 
 $a=1;
 if($a>=0) {
