@@ -28,4 +28,4 @@ if($a>0) {
 }else {
   $name='Плохо';}
 
-$label=$app->add(['Label',$name,'small olive']);
+$label=$app->add(['Label',$name,'tiny olive']);
