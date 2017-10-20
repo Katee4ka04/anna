@@ -25,10 +25,10 @@ $text->addParagraph('Это он молока выпил');
 $a=1;
 if($a==0) {
   $name='Хорошо';
-  $color='olive';
+  $color='massive olive';
 }else {
   $name='Плохо';
-  $color='red';
+  $color='mini red';
 }
 
 $label=$app->add(['Label',$name,$color]);
@@ -36,53 +36,65 @@ $label=$app->add(['Label',$name,$color]);
 $a=1;
 if($a>=0) {
   $name='Хорошо';
+  $color='massive olive';
 }else {
   $name='Плохо';
+  $color='mini red';
 }
 
-$label=$app->add(['Label',$name,'massive olive']);
+$label=$app->add(['Label',$name,$color]);
 
 $a=1;
 if($a<=0) {
   $name='Хорошо';
+  $color='massive olive';
 }else {
   $name='Плохо';
+  $color='mini red';
 }
 
-$label=$app->add(['Label',$name,'massive olive']);
+$label=$app->add(['Label',$name,$color]);
 
 $a=1;
 if($a<=0) {
   $name='Хорошо';
+  $color='massive olive';
 }else {
   $name='Плохо';
+  $color='mini red';
 }
 
-$label=$app->add(['Label',$name,'massive olive']);
+$label=$app->add(['Label',$name,$color]);
 
 $a=1;
 if($a<=0) {
   $name='Хорошо';
+  $color='massive olive';
 }else {
   $name='Плохо';
+  $color='mini red';
 }
 
-$label=$app->add(['Label',$name,'massive olive']);
+$label=$app->add(['Label',$name,$color]);
 
 $a=1;
 if($a!=0) {
   $name='Хорошо';
+  $color='massive olive';
 }else {
   $name='Плохо';
+  $color='mini red';
 }
 
-$label=$app->add(['Label',$name,'massive olive']);
+$label=$app->add(['Label',$name,$color]);
 
 $a='test';
 if($a=='тест') {
   $name='Хорошо';
+  $color='massive olive';
 }else {
   $name='Плохо';
+  $color='mini red';
 }
 
-$label=$app->add(['Label',$name,'massive olive']);
+$label=$app->add(['Label',$name,$color]);
