@@ -28,7 +28,7 @@ if($a==0) {
   $color='olive';
 }else {
   $name='Плохо';
-  $color='red'
+  $color='red';
 }
 
 $label=$app->add(['Label',$name,$color]);
