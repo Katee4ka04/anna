@@ -22,8 +22,10 @@ $text=$app->add(['Text','Молоко полезно']);
 $text->addParagraph('Видишь каким стал Ёжик?');
 $text->addParagraph('Это он молока выпил');
 
-$a=-3;
+$a=3;
 if($a>0) {
-  echo'Молодец';
+  $name='Хорошо';
 }else {
-  echo'Олодец';}
+  $name='Плохо';}
+
+$label=$app->add(['Label',$name,'small olive']);
