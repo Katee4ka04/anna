@@ -21,3 +21,9 @@ $icon=$app->add(['Image',$img1]);
 $text=$app->add(['Text','Молоко полезно']);
 $text->addParagraph('Видишь каким стал Ёжик?');
 $text->addParagraph('Это он молока выпил');
+
+$a=3;
+if($a>0) {
+  echo'Молодец';
+}else {
+  echo'Не олодец';}
