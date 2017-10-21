@@ -52,4 +52,10 @@ $button8=$app->add('Button');
 $button8->set('туда');
 $button8->icon='book';
 $button8->link('katee4ka.php');
-$button8->addClass('orange massive');
+$button8->addClass('massive orange');
+
+$button9=$app->add('Button');
+$button9->set('В черной дыре');
+$button9->icon='youtube';
+$button9->link('https://www.youtube.com/');
+$buton9->addClass('big readfile');
