@@ -98,3 +98,8 @@ if($a=='тест') {
 }
 
 $label=$app->add(['Label',$name,$color]);
+
+$label=$app->add(['Label','Это место','big violet','detail'=>'для крутых']);
+
+$img2='https://s00.yaplakal.com/pics/pics_original/6/9/5/5758596.jpg';
+$icon=$app->add(['Image',$img2]);
