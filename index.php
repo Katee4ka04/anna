@@ -58,4 +58,4 @@ $button9=$app->add('Button');
 $button9->set('В черной дыре');
 $button9->icon='youtube';
 $button9->link('https://www.youtube.com/');
-$buton9->addClass('big red');
+$button9->addClass('big red');
