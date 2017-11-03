@@ -64,3 +64,7 @@ $button9->addClass('big red');
 $button10=$app->add('Button');
 $button10->set('Далее');
 $button10->link(['test','name'=>'Анна','surname'=>'Колесникова']);
+
+$button11=$app->add('Button');
+$button11->set('1');
+$button11->link(['test','number'=>'1']);
