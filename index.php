@@ -48,7 +48,7 @@ $bar->add(['Button','Всезнающая','icon'=>'google']);
 $bar->add(['Button','Как дела','icon'=>'whatsapp']);
 */
 
-$button8=$app->add('Button');
+/*$button8=$app->add('Button');
 $button8->set('туда');
 $button8->icon='book';
 $button8->link('katee4ka.php');
@@ -59,3 +59,8 @@ $button9->set('В черной дыре');
 $button9->icon='youtube';
 $button9->link('https://www.youtube.com/');
 $button9->addClass('big red');
+*/
+
+$button10=$app->add('Button');
+$button10->set('Далее');
+$view->link(['liblo','name'=>'Анна']);
