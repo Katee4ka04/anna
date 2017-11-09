@@ -10,3 +10,5 @@ $number=$_GET['number'];
 //$label=$app->add(['Label',$name.' '.$surname]);
 
 $label=$app->add(['Label',$number,'massive blue']);
+
+$label=$app->add(['Label',$number1,'massive teal']);
