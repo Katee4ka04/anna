@@ -9,4 +9,4 @@ $number=$_GET['number'];
 
 //$label=$app->add(['Label',$name.' '.$surname]);
 
-$label=$app->add(['Label',$number]);
+$label=$app->add(['Label',$number,'massive blue']);
