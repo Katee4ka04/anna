@@ -6,7 +6,7 @@ $app->initLayout('Centered');
 //$name=$_GET['name'];
 //$surname=$_GET['surname'];
 $number=$_GET['number'];
-
+$number1=$_GET['number1']
 //$label=$app->add(['Label',$name.' '.$surname]);
 
 $label=$app->add(['Label',$number,'massive blue']);
