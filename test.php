@@ -11,4 +11,4 @@ $number1=$_GET['number1']
 
 $label=$app->add(['Label',$number,'massive blue']);
 
-$label=$app->add(['Label',$number1,'massive teal']);
+$label=$app->add(['Label',$number,'massive teal']);

@@ -72,5 +72,5 @@ $button11->addClass('blue');
 
 $button12=$app->add('Button');
 $button12->set('2');
-$button12->link(['test','number1'=>'2']);
+$button12->link(['test','number'=>'2']);
 $button12->addClass('teal');
