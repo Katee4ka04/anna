@@ -18,7 +18,7 @@ $max=$_GET['max'];
 
 $mid=round(($min+$max)/2);
 
-$label=$app->add(['Label','Ваше число больше '.])
+$label=$app->add(['Label','Ваше число больше '.$mid.'?']);
 
 $button1=$app->add('Button');
 $button1->set('Мое число больше');
