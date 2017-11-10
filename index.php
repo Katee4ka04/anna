@@ -77,7 +77,7 @@ $button12->addClass('teal');
 */
 
 $text=$app->add(['Text','Ты попал в игру']);
-$text->addParagraph(['Чтобы начать играть, нажми на кнопку']);
+$text->addParagraph('Чтобы начать играть, нажми на кнопку');
 
 $button0990=$app->add('Button');
 $button0990->set('Ирать');
