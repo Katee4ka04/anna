@@ -1,6 +1,6 @@
 <?PHP
 require 'vendor/autoload.php';
-$app=new \atk4\ui\App('Добро пожаловать на вебстраничку!');
+$app=new \atk4\ui\App('Добро пожаловать игрок!');
 $app->initLayout('Centered');
 /*$button1=$app->add('Button');
 $button1->set('Нажми :)');
@@ -61,7 +61,7 @@ $button9->link('https://www.youtube.com/');
 $button9->addClass('big red');
 */
 
-$button10=$app->add('Button');
+/*$button10=$app->add('Button');
 $button10->set('Далее');
 $button10->link(['test','name'=>'Анна','surname'=>'Колесникова']);
 
@@ -74,3 +74,12 @@ $button12=$app->add('Button');
 $button12->set('2');
 $button12->link(['test','number'=>'2']);
 $button12->addClass('teal');
+*/
+
+$text=$app->add(['Text','Ты попал в игру']);
+$text->addParagraph(['Чтобы начать играть, нажми на кнопку']);
+
+$button0990=$app->add('Button');
+$button0990->set('Ирать');
+$button0990->link(['test','min'=>'1','max'=>'100']);
+$button0990->addClass('big orange');
