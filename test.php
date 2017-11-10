@@ -22,13 +22,15 @@ $label=$app->add(['Label','Ваше число больше '.$mid.'?']);
 
 $button1=$app->add('Button');
 $button1->set('Мое число больше');
-$button1->addClass('litle');
+$button1->addClass('big olive');
 $button1->link(['test','min'=>$mid,'max'=>$max]);
 
 $button2=$app->add('Button');
 $button2->set('Moe число меньше');
+$button2->addClass('big perple');
 $button2->link(['test','min'=>$min,'max'=>$mid]);
 
 $button3=$app->add('Button');
 $button3->set('Это оно');
+$button1->addClass('huge blue');
 $button3->link(['win']);
