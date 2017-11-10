@@ -1,6 +1,6 @@
 <?PHP
 require 'vendor/autoload.php';
-$app=new \atk4\ui\App('Добро пожаловать на вебстраничку!');
+$app=new \atk4\ui\App('Загадай число от 1 до 100');
 $app->initLayout('Centered');
 
 /*$name=$_GET['name'];
