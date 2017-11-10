@@ -16,4 +16,4 @@ $label=$app->add(['Label',$number,'massive teal']);*/
 $min=$_GET['min'];
 $max=$_GET['max'];
 
-$mid=($min+$max)/2;
+$mid=round(($min+$max)/2);
