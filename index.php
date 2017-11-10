@@ -80,6 +80,6 @@ $text=$app->add(['Text','Ты попал в игру']);
 $text->addParagraph('Чтобы начать играть, нажми на кнопку');
 
 $button0990=$app->add('Button');
-$button0990->set('Ирать');
+$button0990->set('Играть');
 $button0990->link(['test','min'=>'1','max'=>'100']);
 $button0990->addClass('big orange');
