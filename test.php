@@ -32,5 +32,5 @@ $button2->link(['test','min'=>$min,'max'=>$mid]);
 
 $button3=$app->add('Button');
 $button3->set('Это оно');
-$button1->addClass('huge blue');
+$button3->addClass('massive blue');
 $button3->link(['win']);
