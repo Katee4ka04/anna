@@ -23,7 +23,7 @@ $label=$app->add(['Label','Ваше число больше'.$mid.'?','massive p
 if($max-$min==1){
   $text=$app->add(['Text','Ой, ты ошибся! Сыграй еще раз!']);
 $button=$app->add(['Button','Попробуй с начала']);
-$button->link('index');
+$button->link(['index']);
 }else{
 
 $button1=$app->add('Button');
