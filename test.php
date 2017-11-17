@@ -18,11 +18,11 @@ $max=$_GET['max'];
 
 if($max-$min==1){
   $text=$app->add(['Text','Ой, ты ошибся! Сыграй еще раз!']);
-$button=$app->add(['Button','Попробуй с начала']);
+$button=$app->add(['Button','Попробуй с начала','big red']);
 $button->link(['index']);
 }else{
   $mid=round(($min+$max)/2);
-  
+
   $label=$app->add(['Label','Ваше число больше '.$mid.'?','massive purple']);
 
 $button1=$app->add('Button');
