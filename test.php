@@ -16,7 +16,7 @@ $label=$app->add(['Label',$number,'massive teal']);*/
 $min=$_GET['min'];
 $max=$_GET['max'];
 
-if((($max-$min==1)and)isset($_GET['key'])){
+if(($max-$min==1)and (isset($_GET['key']))){
   $text=$app->add(['Text','Ой, ты ошибся! Сыграй еще раз!']);
 $button=$app->add(['Button','Попробуй сначала','big red']);
 $button->link(['index']);
