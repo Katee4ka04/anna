@@ -35,7 +35,7 @@ $button1->link(['test','min'=>$mid,'max'=>$max,'key'=>'key']);
 $button2=$app->add('Button');
 $button2->set('Moe число меньше');
 $button2->addClass('big pink');
-$button2->link(['test','min'=>$min,'max'=>$mid',key'=>'key']);
+$button2->link(['test','min'=>$min,'max'=>$mid,'key'=>'key']);
 
 $button3=$app->add('Button');
 $button3->set('Это оно');
