@@ -20,11 +20,12 @@ $mid=round(($min+$max)/2);
 
 $label=$app->add(['Label','Ваше число больше'.$mid.'?','massive purple']);
 
-$if($max-$min==1){
+if($max-$min==1){
   $text=$app->add(['Text','Ой, ты ошибся! Сыграй еще раз!']);
 $button=$app->add(['Button','Попробуй с начала']);
 $button->link('index');
-}
+}else{
+
 $button1=$app->add('Button');
 $button1->set('Мое число больше');
 $button1->addClass('big olive');
@@ -38,4 +39,4 @@ $button2->link(['test','min'=>$min,'max'=>$mid]);
 $button3=$app->add('Button');
 $button3->set('Это оно');
 $button3->addClass('massive blue');
-$button3->link(['win']);
+$button3->link(['win']);}
