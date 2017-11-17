@@ -1,6 +1,6 @@
 <?PHP
 require 'vendor/autoload.php';
-$app=new \atk4\ui\App('Добро пожаловать игрок!');
+$app=new \atk4\ui\App('Ты молодец!');
 $app->initLayout('Centered');
 
 $label=$app->add('Label');
