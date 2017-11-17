@@ -16,15 +16,14 @@ $label=$app->add(['Label',$number,'massive teal']);*/
 $min=$_GET['min'];
 $max=$_GET['max'];
 
-$mid=round(($min+$max)/2);
-
-$label=$app->add(['Label','Ваше число больше'.$mid.'?','massive purple']);
-
 if($max-$min==1){
   $text=$app->add(['Text','Ой, ты ошибся! Сыграй еще раз!']);
 $button=$app->add(['Button','Попробуй с начала']);
 $button->link(['index']);
 }else{
+  $mid=round(($min+$max)/2);
+  
+  $label=$app->add(['Label','Ваше число больше '.$mid.'?','massive purple']);
 
 $button1=$app->add('Button');
 $button1->set('Мое число больше');
