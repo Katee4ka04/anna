@@ -20,6 +20,8 @@ if($max-$min==1){
   $text=$app->add(['Text','Ой, ты ошибся! Сыграй еще раз!']);
 $button=$app->add(['Button','Попробуй с начала','big red']);
 $button->link(['index']);
+$img='http://99px.ru/sstorage/56/2011/05/10705111544492950.jpg';
+$icon=$app->add(['Image',$img]);
 }else{
   $mid=round(($min+$max)/2);
 
