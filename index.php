@@ -81,5 +81,5 @@ $text->addParagraph('Чтобы начать играть, нажми на кн�
 
 $button0990=$app->add('Button');
 $button0990->set('Играть');
-$button0990->link(['test','min'=>'0','max'=>'3000']);
+$button0990->link(['test','min'=>'0','max'=>'100']);
 $button0990->addClass('big orange');
