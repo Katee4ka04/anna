@@ -1,5 +1,6 @@
 <?PHP
 require 'vendor/autoload.php';
+require 'laima.php';
 $app=new \atk4\ui\App('Добро пожаловать игрок!');
 $app->initLayout('Centered');
 /*$button1=$app->add('Button');
@@ -74,7 +75,7 @@ $button12=$app->add('Button');
 $button12->set('2');
 $button12->link(['test','number'=>'2']);
 $button12->addClass('teal');
-*/
+
 
 $text=$app->add(['Text','Ты попал в игру']);
 $text->addParagraph('Чтобы начать играть, нажми на кнопку');
@@ -83,3 +84,28 @@ $button0990=$app->add('Button');
 $button0990->set('Играть');
 $button0990->link(['test','min'=>'0','max'=>'100']);
 $button0990->addClass('big orange');
+*/
+
+$vaverite= new Laima();
+$vaverite->name = 'Белочка';
+$vaverite->cost = 4;
+$vaverite->color = 'green';
+$label=$app->add(['Label',$vaverite->name,$vaverite->color,'detail'=>$vaverite->cost]);
+
+$lukss= new Laima();
+$lukss->name = 'Люкс';
+$lukss->cost = 9;
+$lukss->color = 'red';
+$label=$app->add(['Label',$lukss->name,$lukss->color,'detail'=>$lukss->cost]);
+
+$lacisi= new Laima();
+$lacisi->name = 'Медвежонок';
+$lacisi->cost = 5;
+$lacisi->color = 'teal';
+$label=$app->add(['Label',$lacisi->name,$lacisi->color,'detail'=>$lacisi->cost]);
+
+$serenade= new Laima();
+$serenade->name = 'Серенада';
+$serenade->cost = 8;
+$serenade->color = 'blue';
+$label=$app->add(['Label',$serenade->name,$serenade->color,'detail'=>$serenade->cost]);
