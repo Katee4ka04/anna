@@ -90,22 +90,22 @@ $vaverite= new Laima();
 $vaverite->name = 'Белочка';
 $vaverite->cost = 4;
 $vaverite->color = 'green';
-$label=$app->add(['Label',$vaverite->name,$vaverite->color,'detail'=>$vaverite->cost,'image'=>'http://www.laima.lv/wp-content/uploads/2016/05/4750001311662_V-VER-TE-2kg-konf-300x191.jpg']);
+$label=$app->add(['Label',$vaverite->name,$vaverite->color,'detail'=>$vaverite->cost,]);
 
 $lukss= new Laima();
 $lukss->name = 'Люкс';
 $lukss->cost = 9;
 $lukss->color = 'red';
-$label=$app->add(['Label',$lukss->name,$lukss->color,'detail'=>$lukss->cost,'image'=>'http://www.laima.lv/wp-content/uploads/2016/05/4750001110517_LUKSS-roze-100g.jpg']);
+$label=$app->add(['Label',$lukss->name,$lukss->color,'detail'=>$lukss->cost,]);
 
 $lacisi= new Laima();
 $lacisi->name = 'Медвежонок';
 $lacisi->cost = 5;
 $lacisi->color = 'teal';
-$label=$app->add(['Label',$lacisi->name,$lacisi->color,'detail'=>$lacisi->cost,'image'=>'http://www.laima.lv/wp-content/uploads/2016/05/4750001340235_L-C-TIS-epain-tis-2kg-konf.jpg']);
+$label=$app->add(['Label',$lacisi->name,$lacisi->color,'detail'=>$lacisi->cost,]);
 
 $serenade= new Laima();
 $serenade->name = 'Серенада';
 $serenade->cost = 8;
 $serenade->color = 'blue';
-$label=$app->add(['Label',$serenade->name,$serenade->color,'detail'=>$serenade->cost,'image'=>'http://www.la.lv/wp-content/uploads/2013/10/g1/serenade2.gif']);
+$label=$app->add(['Label',$serenade->name,$serenade->color,'detail'=>$serenade->cost,]);
