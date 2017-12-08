@@ -88,24 +88,24 @@ $button0990->addClass('big orange');
 
 $vaverite= new Laima();
 $vaverite->name = 'Белочка';
-$vaverite->cost = 4;
+$vaverite->cost = '4';
 $vaverite->color = 'green';
 $label=$app->add(['Label',$vaverite->name,$vaverite->color,'detail'=>$vaverite->cost]);
 
 $lukss= new Laima();
 $lukss->name = 'Люкс';
-$lukss->cost = 9;
+$lukss->cost = '9';
 $lukss->color = 'red';
 $label=$app->add(['Label',$lukss->name,$lukss->color,'detail'=>$lukss->cost]);
 
 $lacisi= new Laima();
 $lacisi->name = 'Медвежонок';
-$lacisi->cost = 5;
+$lacisi->cost = '5';
 $lacisi->color = 'teal';
 $label=$app->add(['Label',$lacisi->name,$lacisi->color,'detail'=>$lacisi->cost]);
 
 $serenade= new Laima();
 $serenade->name = 'Серенада';
-$serenade->cost = 8;
+$serenade->cost = '8';
 $serenade->color = 'blue';
 $label=$app->add(['Label',$serenade->name,$serenade->color,'detail'=>$serenade->cost]);
