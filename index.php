@@ -90,22 +90,26 @@ $vaverite= new Laima();
 $vaverite->name = 'Белочка';
 $vaverite->cost = '4';
 $vaverite->color = 'green';
-$label=$app->add(['Label',$vaverite->name,$vaverite->color,'detail'=>$vaverite->cost]);
+$cost= $vaverite->AllPrise(5);
+$label=$app->add(['Label',$vaverite->name.' Cena = '.$cost.'€',$vaverite->color.' massive','detail'=>$vaverite->cost.'€ за 1кг','image'=>'https://www.kontoriabi.ee/wp-content/uploads/2017/03/450-00381.jpg']);
 
 $lukss= new Laima();
 $lukss->name = 'Люкс';
 $lukss->cost = '9';
 $lukss->color = 'red';
-$label=$app->add(['Label',$lukss->name,$lukss->color,'detail'=>$lukss->cost]);
+$cost= $lukss->AllPrise(3);
+$label=$app->add(['Label',$lukss->name.' Cena = '.$cost.'€',$lukss->color.' massive','detail'=>$lukss->cost.'€ за 1кг','image'=>'http://www.foodlatvia.com/uploads/product/2123/thumb-588ee5f089f29.jpg']);
 
 $lacisi= new Laima();
 $lacisi->name = 'Медвежонок';
 $lacisi->cost = '5';
 $lacisi->color = 'teal';
-$label=$app->add(['Label',$lacisi->name,$lacisi->color,'detail'=>$lacisi->cost]);
+$cost= $lacisi->AllPrise(8);
+$label=$app->add(['Label',$lacisi->name.' Cena = '.$cost.'€',$lacisi->color.' massive','detail'=>$lacisi->cost.'€ за 1кг','image'=>'http://www.laima.lv/wp-content/uploads/2016/05/4750001340235_L-C-TIS-epain-tis-2kg-konf-300x227.jpg']);
 
 $serenade= new Laima();
 $serenade->name = 'Серенада';
 $serenade->cost = '8';
+$cost= $serenade->AllPrise(2);
 $serenade->color = 'blue';
-$label=$app->add(['Label',$serenade->name,$serenade->color,'detail'=>$serenade->cost]);
+$label=$app->add(['Label',$serenade->name.' Cena = '.$cost.'€',$serenade->color.' massive','detail'=>$serenade->cost.'€ за 1кг','image'=>'http://irecommend.ru/sites/default/files/product-images/106250/lxPXax0Rs3iAL2lKB1HUog.jpg']);
