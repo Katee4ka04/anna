@@ -1,5 +1,4 @@
 <?PHP
-
 Class Laima {
   public $name;
   public $cost;
