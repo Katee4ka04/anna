@@ -206,7 +206,7 @@ class Friends extends \atk4\data\Model {
     parent::init();
     $this->addField('name');
     $this->addField('surname');
-  $this->addField('phone_number',['defalut'=>'+371']);
+  $this->addField('phone_number');
     $this->addField('email');
       $this->addField('birthday',['type'=>'date']);
    $this->addField('notes',['type'=>'text']);
@@ -217,9 +217,11 @@ $form=$app->layout->add('Form');
 $form->setModel(new Friends($db));
 $form->onSubmit(function ($form) {
   $form->model->save();
-  return $form->sucess('Record uptated');
-
+  return $form->success('Record uptated');
 });
 
-$grid=$app->add('Grid');
+$grid = $app->layout->add('Grid');
 $grid->setModel(new Friends($db));
+
+$crud = $app->layout->add('CRUD');
+$crud->setModel(new Friends($db));
