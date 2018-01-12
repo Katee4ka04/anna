@@ -1,115 +1,222 @@
-<?PHP
+<?php
 require 'vendor/autoload.php';
-require 'laima.php';
-$app=new \atk4\ui\App('Добро пожаловать покупатель!');
-$app->initLayout('Centered');
-/*$button1=$app->add('Button');
-$button1->set('Нажми :)');
-$button1->icon='instagram';
-$button1->link('https://www.instagram.com/');
-$button1->addClass('big pink');
+$app = new \atk4\ui\App("Добро пожаловать в якобы игру");
+$app->initLayout("Centered");
+/*
+$button = $app->add('Button');
+$button->set('YouTube');
+$button->icon = 'Image';
+$button->addClass('medium red');
+$button->link('https://www.youtube.com/');
 
-$button2=$app->add('Button');
-$button2->set('Кликай :3');
-$button2->icon='vk';
-$button2->link('https://vk.com/');
-$button2->addClass('big blue');
+$button = $app->add('Button');
+$button->set('Facebook');
+$button->icon = 'Comments';
+$button->addClass('medium blue');
+$button->link('https://www.facebook.com/');
 
-$button3=$app->add('Button');
-$button3->set('Жми :0');
-$button3->icon='facebook';
-$button3->link('https://www.facebook.com/');
-$button3->addClass('big violet');
+$button = $app->add('Button');
+$button->set('Aliexpress');
+$button->icon = 'Shopping Bag';
+$button->addClass('medium orange');
+$button->link('https://www.aliexpress.com');
 
-$button4=$app->add('Button');
-$button4->set('Черная дыра');
-$button4->icon='youtube';
-$button4->link('https://www.youtube.com/?hl=lv&gl=LV');
-$button4->addClass('massive red');
+$button= $app->add(['Button','index2']);
+$button->link('index2.php');
+$button->addClass('medium green');
 
-$button5=$app->add(['Button','опасно','iconRight'=>'book']);
-$button5->link('https://www.e-klase.lv/lv/');
-$button5->addClass('mini black');
+$text=$app->add(['Text','Here can be text']);
+$text->addParagraph('Text');
 
-$button6=$app->add('Button');
-$button6->set('Снапчат');
-$button6->icon='snapchat';
-$button6->link('https://www.snapchat.com/');
-$button6->addClass('yellow');
+$a= 0;
+  if ($a==0) {
+    $name='Верно!';
+  }else{
+    $name='Неверно!';
+  }
 
-$button7=$app->add('Button');
-$button7->set('Позвони');
-$button7->icon='skype';
-$button7->link('https://www.skype.com/en/');
-$button7->addClass('tiny teal');
+$label=$app->add(['Label',$name]);
+$label->addClass('medium green');
 
-$bar = $app->add(['ui'=>'vertical buttons']);
+$a= 0;
+  if ($a>0) {
+    $name='Верно!';
+    $color='green';
 
-$bar->add(['Button','Всезнающая','icon'=>'google']);
-$bar->add(['Button','Как дела','icon'=>'whatsapp']);
+  }else{
+    $name='Неверно!';
+    $color='red';
+
+  }
+
+$label=$app->add(['Label',$name]);
+$label->addClass($color);
+
+$a= 0;
+  if ($a<0) {
+    $name='Верно!';
+    $color='green';
+  }else{
+    $name='Неверно!';
+    $color='red';
+  }
+
+$label=$app->add(['Label',$name]);
+$label->addClass($color);
+
+$a= 0;
+  if ($a>=0) {
+    $name='Верно!';
+    $color='green';
+  }else{
+    $name='Неверно!';
+    $color='red';
+  }
+
+$label=$app->add(['Label',$name]);
+$label->addClass($color);
+
+$a= 0;
+  if ($a<=0) {
+    $name='Верно!';
+    $color='green';
+  }else{
+    $name='Неверно!';
+    $color='red';
+  }
+
+$label=$app->add(['Label',$name]);
+$label->addClass($color);
+
+$a= tesst;
+  if ($a=='test') {
+    $name='Верно!';
+    $color='green';
+  }else{
+    $name='Неверно!';
+    $color='red';
+  }
+
+$label=$app->add(['Label',$name]);
+$label->addClass($color);
+
+$a= 0;
+  if ($a!=0) {
+    $name='Верно!';
+    $color='green';
+  }else{
+    $name='Неверно!';
+    $color='red';
+  }
+
+$label=$app->add(['Label',$name]);
+$label->addClass($color);
+
+
+$button=$app->add('Button');
+$button->set('КНОПКА');
+$button->link(['index3','name'=>'Ilja','surname'=>'Polivko']);
+
+$button1=$app->add(['Label','1']);
+$button2=$app->add(['Label','2']);
+$button3=$app->add(['Label','3']);
+$button1=$app->add('Button');
+
+  $text=$app->add(['Text','Чтобы начать игру нажмите кнопку']);
+  $button=$app->add(['Button']);
+  $button->set('Играть');
+  $button->link(['index3','min'=>1,'max'=>100]);
+  $button->addClass('blue');
+
+
+
+$cat1=new Cat;
+$cat1->name='Barsik';
+$cat1->color='Grey';
+$cat1->sex='Boy';
+$cat1->age='10';
+$cat1->AgeCheck();
+$label=$app->add(['Label',$cat1->name.' '.$answer]);
+
+$cat2=new Cat;
+$cat2->name='Vasja';
+$cat2->color='White';
+$cat2->sex='Boy';
+$cat2->age='25';
+$cat2->AgeCheck();
+$label=$app->add(['Label',$cat1->name.' '.$answer]);
+
+$cat3=new Cat;
+$cat3->name='Murka';
+$cat3->color='Brown';
+$cat3->sex='Girl';
+$cat3->age='8';
+$cat3->AgeCheck();
+$label=$app->add(['Label',$cat1->name.' '.$answer]);
+
+$cat4=new Cat;
+$cat4->name='Car';
+$cat4->color='Black';
+$cat4->sex='Boy';
+$cat4->age='11';
+$cat4->AgeCheck();
+$label=$app->add(['Label',$cat1->name.' '.$answer]);
+
+$cat5=new Cat;
+$cat5->name='Taison';
+$cat5->color='Grey';
+$cat5->sex='Boy';
+$cat5->age='6';
+$cat5->AgeCheck();
+$label=$app->add(['Label',$cat1->name.' '.$answer]);
+
+
+$sweet1=new Sweet;
+$sweet1->name='Vaverīte';
+$sweet1->color='green';
+$sweet1->price='7';
+$label=$app->add(['Label',$sweet1->name,$sweet1->color.' massive','detail'=>$sweet1->price,'image'=>'https://www.kontoriabi.ee/wp-content/uploads/2017/03/450-00381.jpg']);
+
+
+$sweet2=new Sweet;
+$sweet2->name='Lukss';
+$sweet2->color='red';
+$sweet2->price='9';
+$label2=$app->add(['Label',$sweet2->name,$sweet2->color.' massive','detail'=>$sweet2->price,'image'=>'http://i.ebayimg.com/thumbs/images/g/-EoAAOSwx2dYENET/s-l225.jpg']);
+
+
+$sweet3= new Sweet;
+$sweet3->name='Laciši';
+$sweet3->color='teal';
+$sweet3->price='5';
+$label3=$app->add(['Label',$sweet3->name,$sweet3->color.' massive','detail'=>$sweet3->price,'image'=>'http://www.laima.lv/wp-content/uploads/2016/05/4750001340235_L-C-TIS-epain-tis-2kg-konf.jpg']);
+
+
+$sweet4= new Sweet;
+$sweet4->name='Serenade';
+$sweet4->color='blue';
+$sweet4->price='8';
+$label4=$app->add(['Label',$sweet4->name,$sweet4->color.' massive','detail'=>$sweet4->price,'image'=>'http://www.la.lv/wp-content/uploads/2013/10/g1/serenade2.gif']);
 */
+$db=new
+\atk4\data\Persistence_SQL('mysql:dbname=fdb;host=localhost','root','');
+class Friends extends \atk4\data\Model {
+  public $table = 'friends';
+  function init () {
+    parent::init();
+    $this->addField('name');
+    $this->addField('surname');
+  $this->addField('phone_number',['defalut'=>'+371']);
+    $this->addField('email');
+      $this->addField('birthday',['type'=>'date']);
+   $this->addField('notes',['type'=>'text']);
+ }
+}
 
-/*$button8=$app->add('Button');
-$button8->set('туда');
-$button8->icon='book';
-$button8->link('katee4ka.php');
-$button8->addClass('massive orange');
+$form=$app->layout->add('Form');
+$form->setModel(new Friends($db));
+$form->onSubmit(function ($form) {
+  $form->model->save();
+  return $form->sucess('Record uptated');
 
-$button9=$app->add('Button');
-$button9->set('В черной дыре');
-$button9->icon='youtube';
-$button9->link('https://www.youtube.com/');
-$button9->addClass('big red');
-*/
-
-/*$button10=$app->add('Button');
-$button10->set('Далее');
-$button10->link(['test','name'=>'Анна','surname'=>'Колесникова']);
-
-$button11=$app->add('Button');
-$button11->set('1');
-$button11->link(['test','number'=>'1']);
-$button11->addClass('blue');
-
-$button12=$app->add('Button');
-$button12->set('2');
-$button12->link(['test','number'=>'2']);
-$button12->addClass('teal');
-
-
-$text=$app->add(['Text','Ты попал в игру']);
-$text->addParagraph('Чтобы начать играть, нажми на кнопку');
-
-$button0990=$app->add('Button');
-$button0990->set('Играть');
-$button0990->link(['test','min'=>'0','max'=>'100']);
-$button0990->addClass('big orange');
-*/
-
-$vaverite= new Laima();
-$vaverite->name = 'Белочка';
-$vaverite->cost = '4';
-$vaverite->color = 'green';
-$cost= $vaverite->AllPrise(5);
-$label=$app->add(['Label',$vaverite->name.' Cena = '.$cost.'€',$vaverite->color.' massive','detail'=>$vaverite->cost.'€ за 1кг','image'=>'https://www.kontoriabi.ee/wp-content/uploads/2017/03/450-00381.jpg']);
-
-$lukss= new Laima();
-$lukss->name = 'Люкс';
-$lukss->cost = '9';
-$lukss->color = 'red';
-$cost= $lukss->AllPrise(3);
-$label=$app->add(['Label',$lukss->name.' Cena = '.$cost.'€',$lukss->color.' massive','detail'=>$lukss->cost.'€ за 1кг','image'=>'http://www.foodlatvia.com/uploads/product/2123/thumb-588ee5f089f29.jpg']);
-
-$lacisi= new Laima();
-$lacisi->name = 'Медвежонок';
-$lacisi->cost = '5';
-$lacisi->color = 'teal';
-$cost= $lacisi->AllPrise(8);
-$label=$app->add(['Label',$lacisi->name.' Cena = '.$cost.'€',$lacisi->color.' massive','detail'=>$lacisi->cost.'€ за 1кг','image'=>'http://www.laima.lv/wp-content/uploads/2016/05/4750001340235_L-C-TIS-epain-tis-2kg-konf-300x227.jpg']);
-
-$serenade= new Laima();
-$serenade->name = 'Серенада';
-$serenade->cost = '8';
-$cost= $serenade->AllPrise(2);
-$serenade->color = 'blue';
-$label=$app->add(['Label',$serenade->name.' Cena = '.$cost.'€',$serenade->color.' massive','detail'=>$serenade->cost.'€ за 1кг','image'=>'http://irecommend.ru/sites/default/files/product-images/106250/lxPXax0Rs3iAL2lKB1HUog.jpg']);
+});
