@@ -1,7 +1,7 @@
 <?PHP
 require 'vendor/autoload.php';
 require 'laima.php';
-$app=new \atk4\ui\App('Добро пожаловать покупатель!');
+$app=new \atk4\ui\App('Добро пожаловать!');
 $app->initLayout('Centered');
 /*$button1=$app->add('Button');
 $button1->set('Нажми :)');

@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-$app = new \atk4\ui\App("Добро пожаловать в якобы игру");
+$app = new \atk4\ui\App('Добро пожаловать!');
 $app->initLayout("Centered");
 /*
 $button = $app->add('Button');
