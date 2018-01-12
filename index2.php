@@ -121,12 +121,12 @@ class Friends extends \atk4\data\Model {
   public $table = 'friends';
   function init () {
     parent::init();
-    $this->addField('Name');
-    $this->addField('Surname');
-  $this->addField('Phone_number',['defalut'=>'+371']);
-    $this->addField('Email');
-      $this->addField('Birthday',['type'=>'date']);
-   $this->addField('Notes',['type'=>'Text']);
+    $this->addField('name');
+    $this->addField('surname');
+  $this->addField('phone_number',['defalut'=>'+371']);
+    $this->addField('email');
+      $this->addField('birthday',['type'=>'date']);
+   $this->addField('notes',['type'=>'text']);
  }
 }
 
@@ -137,6 +137,3 @@ $form->onSubmit(function ($form) {
   return $form->sucess('Record uptated');
 
 });
-
-$grid=$app->add('Grid');
-$grid->setModel(new Friends($db));

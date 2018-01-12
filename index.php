@@ -220,3 +220,6 @@ $form->onSubmit(function ($form) {
   return $form->sucess('Record uptated');
 
 });
+
+$grid=$app->add('Grid');
+$grid->setModel(new Friends($db));
