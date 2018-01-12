@@ -126,7 +126,7 @@ class Friends extends \atk4\data\Model {
   $this->addField('Phone_number',['defalut'=>'+371']);
     $this->addField('Email');
       $this->addField('Birthday',['type'=>'date']);
-   $this->addField('Notes',['type'=>'Text']);2
+   $this->addField('Notes',['type'=>'Text']);
  }
 }
 
