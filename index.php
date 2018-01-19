@@ -229,5 +229,5 @@ $crud->setModel(new Friends($db));
 */
 
 
-$tabs=$app->add('Tabs');
+$tabs=$app->add('Menu');
 $tabs->addTab('Shirts');
