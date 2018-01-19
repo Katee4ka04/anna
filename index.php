@@ -234,3 +234,5 @@ $menu->addItem('Shirts');
 $menu->addItem('Hoodes');
 $menu->addItem('Jeans');
 $menu->addItem('Shoes');
+$menu->addItem('Caps');
+$menu->addItem('Socks');
