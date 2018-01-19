@@ -231,3 +231,6 @@ $crud->setModel(new Friends($db));
 
 $menu=$app->add('Menu');
 $menu->addItem('Shirts');
+$menu->addItem('Hoodes');
+$menu->addItem('Jeans');
+$menu->addItem('Shoes');
