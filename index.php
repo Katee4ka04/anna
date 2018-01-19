@@ -198,7 +198,8 @@ $sweet4->color='blue';
 $sweet4->price='8';
 $label4=$app->add(['Label',$sweet4->name,$sweet4->color.' massive','detail'=>$sweet4->price,'image'=>'http://www.la.lv/wp-content/uploads/2013/10/g1/serenade2.gif']);
 */
-$db=new
+
+/*$db=new
 \atk4\data\Persistence_SQL('mysql:dbname=fdb;host=localhost','root','');
 class Friends extends \atk4\data\Model {
   public $table = 'friends';
@@ -225,3 +226,8 @@ $grid->setModel(new Friends($db));
 
 $crud = $app->layout->add('CRUD');
 $crud->setModel(new Friends($db));
+*/
+
+
+$tabs=$app->add('Tabs');
+$tabs->addTab('Shirts');
