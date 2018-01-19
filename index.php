@@ -236,7 +236,7 @@ $toys=$menu->addMenu('Toys');
 $electronics=$menu->addMenu('Electronics');
 
 $clothes->addItem('Shirts');
-$clothes->addItem('Hoodes');
+$clothes->addItem('Hoodies','http://i.ebayimg.com/images/i/281912640312-0-1/s-l1000.jpg');
 $clothes->addItem('Jeans');
 $clothes->addItem('Shoes');
 $clothes->addItem('Caps');
