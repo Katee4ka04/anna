@@ -230,9 +230,10 @@ $crud->setModel(new Friends($db));
 
 
 $menu=$app->add('Menu');
-$menu->addItem('Shirts');
-$menu->addItem('Hoodes');
-$menu->addItem('Jeans');
-$menu->addItem('Shoes');
-$menu->addItem('Caps');
-$menu->addItem('Socks');
+$clothes=$menu->addMenu('Clothes');
+$clothes->addItem('Shirts');
+$clothes->addItem('Hoodes');
+$clothes->addItem('Jeans');
+$clothes->addItem('Shoes');
+$clothes->addItem('Caps');
+$clothes->addItem('Socks');
