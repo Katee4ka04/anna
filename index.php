@@ -247,3 +247,10 @@ $toys->addItem('Dolls');
 $toys->addItem('Teddy toys');
 $toys->addItem('Transformers');
 $toys->addItem('Cars');
+
+$electronics->addItem('Phones');
+$electronics->addItem('Tabs');
+$electronics->addItem('Computers');
+$electronics->addItem('Cases');
+$electronics->addItem('Mouses');
+$electronics->addItem('USB');
