@@ -41,7 +41,7 @@ $clothes=$menu->addMenu('Clothes');
 $toys=$menu->addMenu('Toys');
 $electronics=$menu->addMenu('Electronics');
 
-$clothes->addItem('Shirts','https://www.dhresource.com/albu_302740708_00-1.0x0/long-sleeve-plaid-shirts-for-men-turn-down.jpg');
+$clothes->addItem(['Shirts','red','https://www.dhresource.com/albu_302740708_00-1.0x0/long-sleeve-plaid-shirts-for-men-turn-down.jpg']);
 $clothes->addItem('Hoodies','http://i.ebayimg.com/images/i/281912640312-0-1/s-l1000.jpg');
 $clothes->addItem('Jeans','http://www.everytimefashion.com/images/1/Jeans-Modern.jpg');
 $clothes->addItem('Shoes','http://h3group.ca/wpfiles/wp-content/uploads/2016/04/kid-LED-shoes-SILVER-model-1-K7L9.jpg');
