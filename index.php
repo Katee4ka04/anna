@@ -37,7 +37,7 @@ $crud->setModel(new Friends($db));
 
 $menu=$app->add('Menu');
 
-$clothes=$menu->addMenu('Clothes');
+$clothes=$menu->addMenu(['Clothes','blue']);
 $toys=$menu->addMenu('Toys');
 $electronics=$menu->addMenu('Electronics');
 
