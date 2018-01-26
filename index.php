@@ -46,7 +46,7 @@ $toys=$menu->addMenu('Toys');
 $toys->addClass('teal');
 
 $electronics=$menu->addMenu('Electronics');
-$electronics->addClass('peorple');
+$electronics->addClass('purple');
 
 
 $clothes->addItem('Shirts','https://www.dhresource.com/albu_302740708_00-1.0x0/long-sleeve-plaid-shirts-for-men-turn-down.jpg');
