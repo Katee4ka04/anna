@@ -40,7 +40,7 @@ $tabs=$app->add('Tabs');
 
 $clothes=$menu->addMenu('Clothes');
 $clothes->addClass('blue');
-$clothes=$tabs->addTab('Clothes');
+
 
 $toys=$menu->addMenu('Toys');
 $toys->addClass('teal');
@@ -68,3 +68,26 @@ $electronics->addItem('Computers','http://aropa.co.uk/wp-content/uploads/2016/08
 $electronics->addItem('Cases','https://www.dhresource.com/0x0s/f2-albu-g5-M01-24-F0-rBVaI1j9qNSAGu_OAAEGnIPvUr4725.jpg/for-samsung-s7edge-phone-cases-surface-screen.jpg');
 $electronics->addItem('Mouses','https://images-na.ssl-images-amazon.com/images/I/817L8yUzMgL._SL1500_.jpg');
 $electronics->addItem('USB','https://mochieng.files.wordpress.com/2013/09/usb-stick-1280px-922px0.jpg');
+
+$home=$tabs->addTab('Home');
+$candy=$tabs->addTab('Candy');
+$furniture=$tabs->addTab('furniture');
+$food=$tabs->addTab('food');
+
+
+$image1=$candy->add(['Image','http://thumbs.ebaystatic.com/images/g/dF8AAOSw9r1V-GSd/s-l225.jpg']);
+$image2=$candy->add(['Image','http://i.ebayimg.com/images/i/321241185876-0-1/s-l1000.jpg']);
+$image3=$candy->add(['Image','http://latfood.co.il/images/konfeti_na_razves/trufel.jpg']);
+$image4=$candy->add(['Image','http://www.laima.lv/wp-content/uploads/2016/05/4750001819939_V-VER-TE-piena-okol-de-100g12.jpg']);
+
+$image5=$furniture->add(['Image','http://cdn.home-designing.com/wp-content/uploads/2009/07/living-room-ikea.jpg']);
+$image6=$furniture->add(['Image','https://www.digsdigs.com/photos/ikea-living-room-design-ideas-2012-1.jpg']);
+$image7=$furniture->add(['Image','http://www.ikea.com/ms/flash/rooms_ideas/planner_pax3d/content/fallback/planner_fallback.jpg']);
+$image8=$furniture->add(['Image','http://www.ikea.com/ms/en_US/media/Bedroom/hemnes_day_bed.jpg']);
+
+$image9=$food->add(['Image','http://g4.delphi.lv/images/pix/659x380/88LGQTJYj-g/salami-pica-ediens-italija-48090665.jpg']);
+$image10=$food->add(['Image','https://www.redrobin.com/content/dam/web/menu/tavern-menu/tavern-double-burger-1100.jpg']);
+$image11=$food->add(['Image','http://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/9/23/0/BX0907H_haydens-chocolate-cake-recipe_s4x3.jpg.rend.hgtvcom.616.462.suffix/1383787100380.jpeg']);
+$image12=$food->add(['Image','http://суши-магадан.рф/files/maki-sushi.png']);
+
+$image333=$home->add(['Image','https://cs2.livemaster.ru/storage/ab/0f/63832edf7ab03f4c1e04f6c2a124--dlya-doma-i-interera-tablichka-derevyannaya-dobro-pozhalovat.jpg']);
