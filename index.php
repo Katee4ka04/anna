@@ -36,13 +36,17 @@ $crud->setModel(new Friends($db));
 
 
 $menu=$app->add('Menu');
+$tabs=$app->add('Tabs');
 
 $clothes=$menu->addMenu('Clothes');
 $clothes->addClass('blue');
+$clothes=$tabs->addTab('Clothes');
 
-$toys=$menu->addMenu('Toys',);
+$toys=$menu->addMenu('Toys');
+$toys->addClass('teal');
 
-$electronics=$menu->addMenu('Electronics',);
+$electronics=$menu->addMenu('Electronics');
+$electronics->addClass('peorple');
 
 
 $clothes->addItem('Shirts','https://www.dhresource.com/albu_302740708_00-1.0x0/long-sleeve-plaid-shirts-for-men-turn-down.jpg');
