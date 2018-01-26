@@ -39,7 +39,7 @@ $menu=$app->add('Menu');
 
 $clothes=$menu->addMenu(['Clothes','blue']);
 $toys=$menu->addMenu(['Toys','teal']);
-$electronics=$menu->addMenu(['Electronics','people']);
+$electronics=$menu->addMenu(['Electronics','peorple']);
 
 $clothes->addItem('Shirts','https://www.dhresource.com/albu_302740708_00-1.0x0/long-sleeve-plaid-shirts-for-men-turn-down.jpg');
 $clothes->addItem('Hoodies','http://i.ebayimg.com/images/i/281912640312-0-1/s-l1000.jpg');
