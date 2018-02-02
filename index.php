@@ -1,4 +1,4 @@
-<?php
+<?PHP
 require 'vendor/autoload.php';
 $app = new \atk4\ui\App('SnowwA!');
 $app->initLayout("Centered");
@@ -17,14 +17,20 @@ class Friends extends \atk4\data\Model {
     $this->addField('email');
       $this->addField('birthday',['type'=>'date']);
    $this->addField('notes',['type'=>'text']);
+   $this->addField('age');
  }
 }
 
 $form=$app->layout->add('Form');
 $form->setModel(new Friends($db));
 $form->onSubmit(function ($form) {
-  $form->model->save();
-  return $form->success('Record uptated');
+  if($form->model['age']>13){
+      $form->model->save();
+      return $form->success('Record uptated');
+  }else{
+    return $form->error('+!13!')
+  }
+
 });
 
 $grid = $app->layout->add('Grid');
