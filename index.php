@@ -28,7 +28,8 @@ $form->onSubmit(function ($form) {
       $form->model->save();
       return $form->success('Record uptated');
   }else{
-    return $form->error('+!13!')
+  //  return $form->error('age','Иди в дочки матери играй!');
+  return new \atk4\ui\jsExpression('document.location= "error.php" ');
   }
 
 });
