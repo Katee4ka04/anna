@@ -2,10 +2,10 @@
 require 'vendor/autoload.php';
 $app = new \atk4\ui\App('SnowwA!');
 $app->initLayout("Centered");
-/*
 
 
-/*$db=new
+
+$db=new
 \atk4\data\Persistence_SQL('mysql:dbname=fdb;host=localhost','root','');
 class Friends extends \atk4\data\Model {
   public $table = 'friends';
@@ -32,10 +32,10 @@ $grid->setModel(new Friends($db));
 
 $crud = $app->layout->add('CRUD');
 $crud->setModel(new Friends($db));
-*/
 
 
-$menu=$app->add('Menu');
+
+/*$menu=$app->add('Menu');
 $tabs=$app->add('Tabs');
 
 $clothes=$menu->addMenu('Clothes');
@@ -91,3 +91,4 @@ $image11=$food->add(['Image','http://food.fnr.sndimg.com/content/dam/images/food
 $image12=$food->add(['Image','http://суши-магадан.рф/files/maki-sushi.png']);
 
 $image333=$home->add(['Image','https://cs2.livemaster.ru/storage/ab/0f/63832edf7ab03f4c1e04f6c2a124--dlya-doma-i-interera-tablichka-derevyannaya-dobro-pozhalovat.jpg']);
+*/
