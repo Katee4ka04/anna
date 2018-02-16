@@ -1,25 +1,12 @@
 <?PHP
-require 'vendor/autoload.php';
+require 'conection.php';
+
 $app = new \atk4\ui\App('SnowwA!');
 $app->initLayout("Centered");
 
+$_SESSION['nick'] = 'Artik292';
+$_SESSION['nick'] = 'katee4ka04';
 
-
-$db=new
-\atk4\data\Persistence_SQL('mysql:dbname=fdb;host=localhost','root','');
-class Friends extends \atk4\data\Model {
-  public $table = 'friends';
-  function init () {
-    parent::init();
-    $this->addField('name');
-    $this->addField('surname');
-  $this->addField('phone_number');
-    $this->addField('email');
-      $this->addField('birthday',['type'=>'date']);
-   $this->addField('notes',['type'=>'text']);
-   $this->addField('age');
- }
-}
 
 $form=$app->layout->add('Form');
 $form->setModel(new Friends($db));
@@ -36,11 +23,12 @@ $form->onSubmit(function ($form) {
 
 $grid = $app->layout->add('Grid');
 $grid->setModel(new Friends($db));
+$grid->addQuickSearch(['name','surname','phone_number','age']);
 
 $crud = $app->layout->add('CRUD');
 $crud->setModel(new Friends($db));
 
-
+$button22222=$app->add(['Button','ADMIN','big teal','icon'=>'spy'])->link(['admin']);
 
 /*$menu=$app->add('Menu');
 $tabs=$app->add('Tabs');
