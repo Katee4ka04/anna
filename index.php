@@ -25,10 +25,7 @@ $grid = $app->layout->add('Grid');
 $grid->setModel(new Friends($db));
 $grid->addQuickSearch(['name','surname','phone_number','age']);
 
-$crud = $app->layout->add('CRUD');
-$crud->setModel(new Friends($db));
-
-$button22222=$app->add(['Button','ADMIN','big teal','icon'=>'spy'])->link(['admin']);
+$button22222=$app->add(['Button','ADMIN','big teal','icon'=>'spy'])->link(['check']);
 
 /*$menu=$app->add('Menu');
 $tabs=$app->add('Tabs');
