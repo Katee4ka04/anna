@@ -19,15 +19,24 @@ $form->onSubmit(function ($form) {
   return new \atk4\ui\jsExpression('document.location= "error.php" ');
   }
 
+  $form->onSubmit(function ($form) {
+    $notifier = new \atk4\ui\jsNotify();
+$notifier->setColor('blue');
+  $notifier->setPosition9('center');
+  $notifier->setWidth(50)
+ 
+             ->setContent('Text')
+             ->setTransition('faded')
+             ->setIcon('book');
 });
-
-$grid = $app->layout->add('Grid');
+$grid = $app->layout->add(['Grid']);
 $grid->setModel(new Friends($db));
 $grid->addQuickSearch(['name','surname','phone_number','age']);
 
 $button22222=$app->add(['Button','ADMIN','big teal','icon'=>'spy'])->link(['check']);
 
-/*$menu=$app->add('Menu');
+/*
+$menu=$app->add('Menu');
 $tabs=$app->add('Tabs');
 
 $clothes=$menu->addMenu('Clothes');
