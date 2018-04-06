@@ -8,7 +8,8 @@ class Places extends \atk4\data\Model {
   function init () {
     parent::init();
     $this->addField('name');
-
+$this->hasMany('Client', new Client');
+	
  }
 }
 
@@ -19,7 +20,11 @@ class Client extends \atk4\data\Model {
     $this->addField('name');
     $this->addField('e-mail');
   $this->addField('phone');
-$this->addField('')
+$this->addField('departure_date',['type'=>'date']);
+$this->addField('arrival_date',['type'=>'date']);
+this->hasOne('places_id', new PLace) ->addTitle();
 
  }
 }
+
+
