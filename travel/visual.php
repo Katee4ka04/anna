@@ -1,9 +1,7 @@
 <?PHP
-require 'vendor/autoload.php';
-$app=new \atk4\ui\App(ПРИВЕТ');
-$app->initLayout('Adimin');
-
 
  $layout=$app->layout;
- 
- $layout->leftMenu->addItem(['Main page','icon'=>'building'],['inde]);
+
+$layout->leftMenu->addItem(['Main page','icon'=>'building'],['index']);
+$layout->leftMenu->addItem(['Admin','icon'=>'book'],['admin']);
+$layout->leftMenu->addItem(['Places','icon'=>'clipboard outline'],['places']);
