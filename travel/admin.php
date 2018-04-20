@@ -12,5 +12,3 @@ $grid=$app->add('Grid');
 $grid->setModel($place);
 $grid->addQuickSearch(['name']);
 $grid->addDecorator('name', new \atk4\ui\TableColumn\Link('placelist.php?id={$id}'));
-
-$grid->addDecorator('name', new \atk4\ui\TableColum\Link('placelist.php?id={$id}'));

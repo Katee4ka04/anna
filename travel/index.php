@@ -1,11 +1,7 @@
 <?PHP
 require '../vendor/autoload.php';
-$app=new \atk4\ui\App('ПРИВЕТ');
-$app->initLayout('Admin');
-
-
-require 'connection.php';
-require 'visual.php';
+require 'app.php';
+$app=new App('public');
 
 $form=$app->add('Form');
 $form->setModel(new Client($db));

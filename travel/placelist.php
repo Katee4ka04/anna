@@ -5,9 +5,9 @@ $app->initLayout('Admin');
 require 'connection.php';
 require 'visual.php';
 
-$place=new Place($db);
-$place->load($GET['id']);
-$record= $place->ref('record');
+$place=new Places($db);
+$place->load($_GET['id']);
+$record= $place->ref('Client');
 $record->setOrder('name');
 $grid= $app->add('Grid');
 $grid->setModel($record);
