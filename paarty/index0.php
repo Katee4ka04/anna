@@ -24,7 +24,7 @@ $form->onSubmit(function ($form) {
 $notifier->setColor('blue');
   $notifier->setPosition9('center');
   $notifier->setWidth(50)
- 
+
              ->setContent('Text')
              ->setTransition('faded')
              ->setIcon('book');
