@@ -3,8 +3,9 @@ require 'vendor/autoload.php';
 require 'laima.php';
 $app=new \atk4\ui\App('Добро пожаловать!');
 $app->initLayout('Centered');
+
 /*$button1=$app->add('Button');
-$button1->set('Нажми :)');
+$button1->set('Нажми :));
 $button1->icon='instagram';
 $button1->link('https://www.instagram.com/');
 $button1->addClass('big pink');
@@ -115,7 +116,7 @@ $serenade->color = 'blue';
 $label=$app->add(['Label',$serenade->name.' Cena = '.$cost.'€',$serenade->color.' massive','detail'=>$serenade->cost.'€ за 1кг','image'=>'http://irecommend.ru/sites/default/files/product-images/106250/lxPXax0Rs3iAL2lKB1HUog.jpg']);
 */
 
-$db=new
+/*$db=new
 \atk4\data\Persistence_SQL('mysql:dbname=fdb;host=localhost','root','');
 class Friends extends \atk4\data\Model {
   public $table = 'friends';
@@ -137,3 +138,4 @@ $form->onSubmit(function ($form) {
   return $form->sucess('Record uptated');
 
 });
+*/
